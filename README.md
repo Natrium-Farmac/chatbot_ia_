@@ -72,6 +72,8 @@ Após testar e ver que está tudo funcionando, você pode personalizar seu RAG e
 ----
 **Esse chat bot utiliza o modelo de linguagem 'llama-3.1-70b-versatile' (Groq)** 🔗🤖
 
+**O arquivo ```requirements.txt```foi escrito manualmente de forma resumida por conta dos problemas de versão entre as bibliotecas Langchain. Se preferir e quiser modificar o requirements para um arquivo mais robusto, após instalar as dependências use o comando ```pip freeze > requirements.txt``` para gerar o arquivo extenso.**
+
 💖desenvolvido com base nos vídeos do canal **[PycodeBR](https://www.youtube.com/@pycodebr)**
 
 
