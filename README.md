@@ -74,6 +74,14 @@ Após testar e ver que está tudo funcionando, você pode personalizar seu RAG e
 
 **O arquivo ```requirements.txt```foi escrito manualmente de forma resumida por conta dos problemas de versão entre as bibliotecas Langchain. Se preferir e quiser modificar o requirements para um arquivo mais robusto, após instalar as dependências use o comando ```pip freeze > requirements.txt``` para gerar o arquivo extenso.**
 
+##  📬 Contribuições
+
+Contribuições são super bem-vindas! 🤝
+Basta abrir uma issue ou um pull request.
+
+
+##  💖 Feito com ❤️ por Rayssa Santos
+---
 💖desenvolvido com base nos vídeos do canal **[PycodeBR](https://www.youtube.com/@pycodebr)**
 
 
