@@ -16,18 +16,18 @@ from decouple import config
 
 # Isso silencia o Pylance e mantém o código limpo.
 
-from langchain.chains.combine_documents.stuff import create_stuff_documents_chain  # type: ignore
+#from langchain.chains.combine_documents.stuff import create_stuff_documents_chain  # type: ignore
+from langchain.chains.combine_documents import create_stuff_documents_chain
 
 
 from langchain_chroma import Chroma
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_groq import ChatGroq
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 
 
-os.environ["API_KEY_HERE"] = config("API_KEY_HERE")
-
+GROQ_API_KEY = config("GROQ_API_KEY") 
 
 class AIBot:
 

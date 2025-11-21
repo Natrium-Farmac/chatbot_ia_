@@ -9,12 +9,12 @@ from decouple import config
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_community.document_loaders import PyMuPDFLoader
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 
 # chama as APIs do Groq e do Hugging Face
 
-os.environ["API_KEY_HERE"] = config("API_KEY_HERE")
-os.environ["API_KEY_HERE"] = config("API_KEY_HERE")
+os.environ["GROQ_API_KEY"] = config("GROQ_API_KEY")
+os.environ["HUGGIGFACE_API_KEY"] = config("HUGGINGFACE_API_KEY")
 
 # Carrega o PDF e transforma em texto
 if __name__ == '__main__':

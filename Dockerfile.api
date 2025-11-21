@@ -1,51 +1,16 @@
-FROM python:3.11-slim   
+FROM python:3.11-slim
 
 ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-
-# [Novo bloco] Solucionando problema: 'mysqlclient' -> dependência problemática
-RUN apt-get update && \
-    apt-get install -y \
-    build-essential \
-    default-libmysqlclient-dev \
-    pkg-config && \
-    rm -rf /var/lib/apt/lists/*   
-
-    # Desta forma instalamos as dependências do sistema para compilação.
-    # Pacotes necessários para compilar bibliotecas Python com mysqlclient
-    # que dependem de cabeçalhos C/C++ do MySQL/MariaDB
-
-
-
-COPY requirements.txt requirements.txt
-RUN python -m pip install --upgrade pip
-
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    gcc \
-    g++ \
-    make \
-    libffi-dev \
-    libssl-dev \
-    && rm -rf /var/lib/apt/lists/*
-
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . . 
+COPY . .
 
 ENV FLASK_APP=app.py
 
 EXPOSE 5000
 
-
-
-# [Alteração CMD ] Configurado para usar 'python' de forma direta ao invés de 'flask run'
-
-# CMD ["flask", "run", "--host=0.0.0.0", "--port=5000", "--debug"]
-CMD ["python", "app.py"]
-
-# 'flask run' pode ter problemas de debug na porta 5000 no Docker. Chamar Python de forma direta, 
-# é a maneira mais confiável pois já tem 'app.run(host='0.0.0.0', port=5000, debug=True)' 
-# no arquivo 'app.py'. 
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000", "--debug"]
