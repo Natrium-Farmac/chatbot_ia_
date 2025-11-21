@@ -55,7 +55,7 @@ Alguns comandos úteis para você:
 É possível também buildar e subir apenas um serviço para o docker, por exemplo:
 Neste projeto temos duas coisas que vamos buildar no docker - o serviço local do WAHA (API) e a nossa API, você pode então usar o comando ```docker-compose up --build waha``` ou ```docker-compose up --build api```. 
 
-* Instale as dependências com ```pip install requirements.txt```
+* Instale as dependências com ```pip install -r requirements.txt```
 
 * Construa seu serviço Waha com ```docker-compose up --build waha```
 
