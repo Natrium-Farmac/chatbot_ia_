@@ -1,11 +1,5 @@
 # Chat Bot com IA para whatsapp🤖
 
-Chat bot para whatsapp com IA 🤖 **100% personalizavél** para a sua necessidade. 
-Este projeto possui uma pasta ```rag/data``` -> dentro da pasta ```data``` você pode colocar arquivos .pdf com as informações necessária para a IA conversar com seus clientes, usuários ou com você mesmo. 
-
-![developer kitten](https://i.pinimg.com/736x/0f/1e/1a/0f1e1ae95fb24af9fd016023831e6bec.jpg)
-
-## 📚 Conceitos Fundamentais em RAG
 Aqui vai uma pequna explicação para que você possa montar seu próprio RAG personalizado:
 
 **RAG (Retrieval-Augmented Generation)📕**
@@ -30,11 +24,6 @@ A Vector Store (ou Armazenamento de Vetores) *é um tipo de banco de dados espec
 Embeddings são *representações numéricas (vetores) que um modelo de linguagem gera a partir de palavras, frases ou chunks.* Eles capturam o significado semântico do texto: **quanto mais próximos os vetores estiverem no espaço, mais semelhantes são os seus significados** (ex: "carro" e "automóvel"). *São a base para a busca na Vector Store.*
 
 
-# Vamos por a mão massa😁😉
-![Hello kitty developer chaotic](https://i.pinimg.com/1200x/8b/c1/a7/8bc1a75091b92e2447275c64983a2426.jpg)
-
-
-
 Se você **não tem** Docker instalado na sua máquina ***instale-o imediatamente!!***
 
 Alguns comandos úteis para você:
@@ -50,8 +39,6 @@ Alguns comandos úteis para você:
 ``` docker-compose up ``` para **apenas** subir todos os serviços com o docker-compose
 
 
-## ✅DICA DA TIA RAY(eu)
-
 É possível também buildar e subir apenas um serviço para o docker, por exemplo:
 Neste projeto temos duas coisas que vamos buildar no docker - o serviço local do WAHA (API) e a nossa API, você pode então usar o comando ```docker-compose up --build waha``` ou ```docker-compose up --build api```. 
 
@@ -66,7 +53,7 @@ Caso tenha dificuldades com a configuração leia a documentação oficial, ela 
 
 **Link da documentação oficial: https://waha.devlike.pro/docs/how-to/config/**
 
-Após testar e ver que está tudo funcionando, você pode personalizar seu RAG e se divertir com seu novo chat bot com IA!!😗🤩
+Após testar e ver que está tudo funcionando, você pode personalizar seu RAG e se divertir com seu novo chat bot com IA!!
 
 
 ----
@@ -78,7 +65,6 @@ Após testar e ver que está tudo funcionando, você pode personalizar seu RAG e
 
 Contribuições são super bem-vindas! 🤝
 Basta abrir uma issue ou um pull request.
-
 
 ##  💖 Feito com ❤️ por Rayssa Santos
 ---
